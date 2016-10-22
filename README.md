@@ -135,15 +135,12 @@ SubjectID           Activity tBodyAccMean.X tBodyAccMean.Y tBodyAccMean.Z tBodyA
 Github repo: https://github.com/yatinm3/Getting_and_Cleaning_Data
 
 Files: 
->
-> 
+>> 
 >        README.md (this file)
 >        run_analysis.R (R script)
 >        CODEBOOK.md (code book for variables)
 >        mergedData.txt (Interim data - not specifically required by the assignment)
 >        tidyData.txt (Final data as required by the assignment)
 >
->
-
 tidyData.txt also submitted on the coursera submission web page.
 
