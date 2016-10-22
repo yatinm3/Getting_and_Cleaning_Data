@@ -2,20 +2,26 @@
 
 Each row has 81 variables as described below:
 
+~~~~
+1   SubjectID 
+~~~~
+Values from 1-30 indicating the subject ID used for which the observation pertains to.
+The data is sorted on SubjectID. 6 entries are expected for each SubjectID summarizing
+each of the 6 activities.
 
-1   SubjectID : Values from 1-30 indicating the subject ID used for which the observation pertains to.
-                The data is sorted on SubjectID. 6 entries are expected for each SubjectID summarizing
-                each of the 6 activities.
-
-2   Activity : Indicates the Activity of the SubjectID for the observation. There are 6 valid values:
+~~~~
+2   Activity 
+~~~~
+Indicates the Activity of the SubjectID for the observation. There are 6 valid values:
+~~~~
                LAYING
                SITTING
                STANDING
                WALKING
                WALKING_DOWNSTAIRS
                WALKING_UPSTAIRS
-
-               The data is sorted on Activity for each SubjectID
+~~~~
+The data is sorted on Activity for each SubjectID
 
 Columns 3 through 81 below store the calculated mean for the indicated parameter (feature) for a given
 SubjectID-Activity combination. The feature name is obtained from features.txt file in the raw data.
