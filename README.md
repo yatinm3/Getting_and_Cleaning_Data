@@ -32,7 +32,8 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 It was downloaded on Fri, October 21, 2016 at approximately 7PM US/Pacific Time.
 
-The zip file contains data in several files. The notes for the recipe provide more details.
+The zip file contains data in several underlying files. The notes for the recipe provide 
+more details.
 
 
 ## The tidy data set
