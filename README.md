@@ -65,7 +65,6 @@ The final tidy data set can be read back into an R session for examination using
 commands:
 
 ~~~~
-
 tidy_df <- read.table("tidyData.txt", header = TRUE)
 str(tidy_df)
 'data.frame':	180 obs. of  81 variables:
@@ -76,7 +75,6 @@ names(tidy_df)
  [1] "SubjectID"                    "Activity"                     "tBodyAccMean-X"              
  [4] "tBodyAccMean-Y"               "tBodyAccMean-Z"               "tBodyAccStdev-X"            
 [...further output from names deleted for brevity ....]
-
 ~~~~
 
 ## Codebook
@@ -94,10 +92,8 @@ as informational and are ignored by run_analysis.R
 As required by the assignment, only the relevant columns (with mean and std headings) are
 extracted by the recipe. The raw data is re-arranged as follows into a single table:
 ~~~~
-
    subject_train.txt     y_train.txt        X_train.txt     
    subject_test.txt      y_test.txt         X_train.txt
-
 ~~~~
 
 The individual components of the training and test components are merged row-wise. The
@@ -115,7 +111,6 @@ This tidy data is then grouped by SubjectID, and within that, Activity. The rema
 of the resulting tidy data set looks as follows:
 
 ~~~~
-
 SubjectID           Activity tBodyAccMean.X tBodyAccMean.Y tBodyAccMean.Z tBodyAccStdev.X
         1             LAYING      0.2215982   -0.040513953    -0.11320355     -0.92805647
         1            SITTING      0.2612376   -0.001308288    -0.10454418     -0.97722901
@@ -133,7 +128,6 @@ SubjectID           Activity tBodyAccMean.X tBodyAccMean.Y tBodyAccMean.Z tBodyA
         3            SITTING      0.2571976   -0.003502998    -0.09835792     -0.97101012
         3           STANDING      0.2800465   -0.014337656    -0.10162172     -0.96674254
         3            WALKING      0.2755675   -0.017176784    -0.11267486     -0.36035673
-
 ~~~~
 
 ## The submission
