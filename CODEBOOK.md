@@ -2,6 +2,7 @@
 
 Each row has 81 variables as described below:
 
+
 1   SubjectID : Values from 1-30 indicating the subject ID used for which the observation pertains to.
                 The data is sorted on SubjectID. 6 entries are expected for each SubjectID summarizing
                 each of the 6 activities.
@@ -19,6 +20,8 @@ Each row has 81 variables as described below:
 Columns 3 through 81 below store the calculated mean for the indicated parameter (feature) for a given
 SubjectID-Activity combination. The feature name is obtained from features.txt file in the raw data.
 The detailed measurements of each feature can be obtained from features_info.txt in the raw data set.
+
+~~~~
 
 3   tBodyAccMean-X 
 4   tBodyAccMean-Y 
@@ -98,5 +101,6 @@ The detailed measurements of each feature can be obtained from features_info.txt
 78   fBodyBodyGyroMagMeanFreq 
 79   fBodyBodyGyroJerkMagMean 
 80   fBodyBodyGyroJerkMagStdev 
-81   fBodyBodyGyroJerkMagMeanFreq 
-		
+81   fBodyBodyGyroJerkMagMeanFreq
+
+~~~~
